@@ -1,0 +1,4 @@
+.build/
+helper/WhaleMini.app/
+.DS_Store
+*.log

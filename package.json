@@ -1,0 +1,30 @@
+{
+  "name": "@local/whale-mini",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Collapse the whole DSH window into an always-on-top whale-girl icon; click it to come back",
+  "exports": {
+    ".": "./host/index.js",
+    "./client": "./client.js"
+  },
+  "files": [
+    "host",
+    "client.js",
+    "helper",
+    "scripts",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-commands"
+      ]
+    }
+  }
+}

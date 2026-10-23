@@ -1,0 +1,5 @@
+# whale-mini：把整个窗口收成一只置顶的鲸鱼娘图标，点一下回到窗口。
+# 只有一行；宿主侧注册 /whale-mini/* 路由，UI 在 client.js。
+- insert:
+    - id: whale-mini
+      name: '@local/whale-mini'
